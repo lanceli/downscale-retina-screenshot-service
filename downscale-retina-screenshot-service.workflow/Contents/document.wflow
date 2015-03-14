@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>381</string>
+	<string>409.1</string>
 	<key>AMApplicationVersion</key>
-	<string>2.4</string>
+	<string>2.5</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -67,7 +67,7 @@ SS_PATH="/tmp"
 NOW=$(date +%s)
 
 # image format to create, default is png (other options include pdf, jpg, tiff and other formats)
-SS_TYPE=png
+SS_TYPE=PNG
 
 # name of screenshot
 SS_NAME=screenshot$NOW
@@ -90,8 +90,11 @@ if [ -f $SS_2X ]; then
     
     # copy small one to clipboard by applescript
     # if you hold control key when do capture, causes screen shot 2X to go to clipboard
-    osascript -e 'set the clipboard to POSIX file "'$SS_1X'"'
-fi</string>
+    osascript -e 'set the clipboard to (read (POSIX file "'$SS_1X'") as «class PNGf»)'
+	
+	rm -rf $SS_PATH/screenshot$NOW@2X.$SS_TYPE
+fi
+rm -rf $SS_PATH/screenshot$NOW@1X.$SS_TYPE</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -204,7 +207,7 @@ fi</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>377.000000:606.000000</string>
+				<string>441.500000:690.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
