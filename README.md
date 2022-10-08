@@ -13,7 +13,7 @@ Downscale retina screenshot service
 
 Assign a keyboard shortcut in `System Preferences`. If you assign Cmd+Shift+4 to instead the Native one, then everything looks just like native.
 
-For more detail please check my article: [Downscale Screenshot at high resolution on retina macbook pro or retina 5K iMac](http://blog.lanceli.com/2012/08/downscale-screenshot-at-hight-resolution-on-retina-mackbook-pro.html)
+For more detail please check my article: [Downscale Screenshot at high resolution on retina macbook pro or retina 5K iMac](http://www.lanceli.com/2012/08/downscale-screenshot-at-hight-resolution-on-retina-mackbook-pro.html)
 
 ## License
 
